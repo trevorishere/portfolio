@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:ital,wght@0,300;0,400;0,600;0,900&family=DM+Mono:wght@500&family=Roboto+Serif:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #333333;
+  --color-parchment: #d7d0ca;
+  --color-cement: #85827e;
+  --color-sand: #595652;
+
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-serif: "Roboto Serif", serif;
+
+  /* Mobile: 0-767px (default, unprefixed).
+     Tablet: 768-1099px (`tablet:`).
+     Desktop: 1100px+ (`desktop:`). */
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1100px;
+
+  --leading-100: 1;
+  --leading-110: 1.1;
+  --leading-120: 1.2;
+  --leading-130: 1.3;
+  --leading-140: 1.4;
+  --leading-150: 1.5;
+  --leading-160: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-charcoal);
+  color: white;
+  font-family: var(--font-body);
+}
