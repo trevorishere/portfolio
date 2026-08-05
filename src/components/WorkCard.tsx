@@ -11,17 +11,12 @@ export default function WorkCard({
   href,
   reverse,
 }: WorkItem & { reverse: boolean }) {
-  const isInternal = href.startsWith("/");
-  const Wrapper = isInternal ? Link : "a";
-  const linkProp = isInternal ? { to: href } : { href };
+  const className = `flex w-full flex-col items-stretch gap-6 rounded-[24px] bg-parchment/6 pt-4 pb-6 px-4 tablet:flex-row tablet:gap-4 tablet:bg-parchment/10 tablet:p-4 desktop:bg-parchment/6 ${
+    reverse ? "tablet:flex-row-reverse" : ""
+  }`;
 
-  return (
-    <Wrapper
-      {...linkProp}
-      className={`flex w-full flex-col items-stretch gap-6 rounded-[24px] bg-parchment/6 pt-4 pb-6 px-4 tablet:flex-row tablet:gap-4 tablet:bg-parchment/10 tablet:p-4 desktop:bg-parchment/6 ${
-        reverse ? "tablet:flex-row-reverse" : ""
-      }`}
-    >
+  const content = (
+    <>
       <CoverImage
         src={image}
         alt={title}
@@ -36,6 +31,20 @@ export default function WorkCard({
           {description}
         </p>
       </div>
-    </Wrapper>
+    </>
+  );
+
+  if (href.startsWith("/")) {
+    return (
+      <Link to={href} className={className}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={href} className={className}>
+      {content}
+    </a>
   );
 }
