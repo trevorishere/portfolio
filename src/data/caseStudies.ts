@@ -6,12 +6,12 @@ import valimailBefore from "../assets/images/case-studies/valimail-before.png";
 import valimailDefendAfter from "../assets/images/case-studies/valimail-defend-after.png";
 import valimailEnforceAfter from "../assets/images/case-studies/valimail-enforce-after.png";
 import valimailWireframe from "../assets/images/case-studies/valimail-wireframe.png";
-import psStoreHome from "../assets/images/case-studies/ps-store-home.png";
-import psMosaicTiles from "../assets/images/case-studies/ps-mosaic-tiles.png";
-import psBrandedCarousel from "../assets/images/case-studies/ps-branded-carousel.png";
-import psContentGrid from "../assets/images/case-studies/ps-content-grid.png";
-import psBrandedContentGrid from "../assets/images/case-studies/ps-branded-content-grid.png";
-import psProductDetail from "../assets/images/case-studies/ps-product-detail.png";
+import psStoreHome from "../assets/images/case-studies/ps-store-home.jpg";
+import psMosaicTiles from "../assets/images/case-studies/ps-mosaic-tiles.jpg";
+import psBrandedCarousel from "../assets/images/case-studies/ps-branded-carousel.jpg";
+import psContentGrid from "../assets/images/case-studies/ps-content-grid.jpg";
+import psBrandedContentGrid from "../assets/images/case-studies/ps-branded-content-grid.jpg";
+import psProductDetail from "../assets/images/case-studies/ps-product-detail.jpg";
 
 export type Stat = { value: string; label: string };
 export type OverviewItem = { caption: string; image: string };
