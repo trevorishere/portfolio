@@ -9,7 +9,9 @@ export default function ExperimentCard({
 }: Experiment) {
   return (
     <div className="flex w-full flex-col gap-4 tablet:flex-1">
-      <CoverImage src={image} alt={title} className="h-[245px] w-full rounded-lg" />
+      <a href={href} target="_blank" rel="noreferrer" className="block w-full">
+        <CoverImage src={image} alt={title} className="h-[245px] w-full rounded-lg" />
+      </a>
       <div className="flex flex-col gap-2">
         <h3 className="font-heading text-[16px] font-medium leading-120 text-white">
           {title}
