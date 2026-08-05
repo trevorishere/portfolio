@@ -70,20 +70,20 @@ export const experiments: Experiment[] = [
     description:
       "A prototype for organizing and managing content and an RBAC system to manage individuals’ access within workspaces, projects, and features.",
     image: experimentBronte,
-    href: "#",
+    href: "https://bronte.trevorishere.com",
   },
   {
     title: "Fantasy Hockey Draft List Generator",
     description:
       "A personal research tool for my 2026 NHL playoffs fantasy draft—pick the winning teams in each round and your draft list is automatically created.",
     image: experimentFantasyHockey,
-    href: "#",
+    href: "https://playoffs26.trevorishere.com",
   },
   {
     title: "Photo Generator",
     description:
       "I didn’t like having to subscribe or pay for these tools so I made my own.",
     image: experimentPhotoGenerator,
-    href: "#",
+    href: "https://trevorishere.github.io/falphotoapp/",
   },
 ];

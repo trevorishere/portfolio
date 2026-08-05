@@ -19,6 +19,8 @@ export default function ExperimentCard({
         </p>
         <a
           href={href}
+          target="_blank"
+          rel="noreferrer"
           className="font-body w-fit text-[14px] font-light text-parchment underline"
         >
           View prototype
