@@ -11,7 +11,7 @@ export default function NextProjectLink({
   return (
     <Link
       to={`/work/${caseStudy.slug}`}
-      className={`group flex items-center gap-1 p-1 font-serif text-[16px] font-light leading-130 text-white ${className}`}
+      className={`group flex items-center gap-1 px-2 py-3 font-serif text-[16px] font-light leading-130 text-white ${className}`}
     >
       Next
       <svg
@@ -23,6 +23,7 @@ export default function NextProjectLink({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        aria-hidden="true"
         className="shrink-0 transition-transform duration-200 group-hover:translate-x-1"
       >
         <path d="m9 18 6-6-6-6" />

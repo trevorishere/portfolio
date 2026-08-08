@@ -3,7 +3,7 @@ import type { Metric } from "../data/content";
 
 export default function MetricCard({ value, label, org }: Metric) {
   return (
-    <div className="flex flex-1 flex-col gap-1 rounded-[16px] border border-sand p-5 tablet:rounded-[24px] tablet:p-8 desktop:p-10 desktop:rounded-[32px]">
+    <div className="flex flex-1 flex-col gap-1 rounded-[16px] border border-[#87837d] p-5 tablet:rounded-[24px] tablet:p-8 desktop:p-10 desktop:rounded-[32px]">
       <p className="font-heading text-[18px] font-medium leading-100 text-white tablet:text-[32px] tablet:font-semibold tablet:text-parchment desktop:text-[36px]">
         {value}
       </p>

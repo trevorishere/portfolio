@@ -10,7 +10,8 @@ export default function ExperimentCard({
   return (
     <div className="flex w-full flex-col gap-4 tablet:flex-1">
       <a href={href} target="_blank" rel="noreferrer" className="block w-full">
-        <CoverImage src={image} alt={title} className="h-[245px] w-full rounded-lg" />
+        <CoverImage src={image} alt={`${title} preview`} className="h-[245px] w-full rounded-lg" />
+        <span className="sr-only">(opens in new tab)</span>
       </a>
       <div className="flex flex-col gap-2">
         <h3 className="font-heading text-[16px] font-medium leading-120 text-white">
@@ -26,6 +27,7 @@ export default function ExperimentCard({
           className="font-body w-fit text-[14px] font-light text-parchment underline"
         >
           View prototype
+          <span className="sr-only"> (opens in new tab)</span>
         </a>
       </div>
     </div>
