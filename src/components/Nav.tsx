@@ -54,7 +54,7 @@ export default function Nav() {
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="flex size-10 shrink-0 flex-col items-center justify-center gap-[6px] tablet:hidden"
+              className="flex size-11 shrink-0 flex-col items-center justify-center gap-[6px] tablet:hidden"
             >
               <span className="h-[2px] w-[18px] rounded-full bg-cement opacity-80" />
               <span className="h-[2px] w-[18px] rounded-full bg-cement opacity-80" />

@@ -19,7 +19,7 @@ export default function WorkCard({
     <>
       <CoverImage
         src={image}
-        alt={title}
+        alt={`${org} case study cover: ${title}`}
         className="aspect-[612/344] w-full rounded-[16px] tablet:flex-1 tablet:rounded-[12px] desktop:rounded-[16px]"
       />
       <div className="flex flex-col justify-center gap-1 px-1 tablet:flex-1 tablet:pl-6 tablet:pr-12 tablet:pb-2 desktop:gap-2 desktop:pl-8 desktop:pr-16 desktop:pb-4">
