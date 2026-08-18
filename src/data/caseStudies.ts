@@ -12,9 +12,10 @@ import psBrandedCarousel from "../assets/images/case-studies/ps-branded-carousel
 import psContentGrid from "../assets/images/case-studies/ps-content-grid.jpg";
 import psBrandedContentGrid from "../assets/images/case-studies/ps-branded-content-grid.jpg";
 import psProductDetail from "../assets/images/case-studies/ps-product-detail.jpg";
+import psStoreWalkthrough from "../assets/videos/case-studies/ps-store-walkthrough.mp4";
 
 export type Stat = { value: string; label: string };
-export type OverviewItem = { caption: string; image: string };
+export type OverviewItem = { caption: string; image?: string; video?: string };
 
 export type CaseStudy = {
   slug: string;
@@ -94,6 +95,7 @@ export const caseStudies: CaseStudy[] = [
       { value: "PS4, PS5", label: "Design framework currently active on consoles" },
     ],
     overview: [
+      { caption: "Store home walkthrough", video: psStoreWalkthrough },
       { caption: "Store home with slideout navigation", image: psStoreHome },
       { caption: "Over a hundred layouts were created with a 'mosaic' tile system", image: psMosaicTiles },
       { caption: "Branded carousel", image: psBrandedCarousel },
